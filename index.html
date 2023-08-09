@@ -20,15 +20,23 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
-</head>
+   </head>
 <body>
     <video autoplay muted loop id="bg-video">
         <source src="./publish/video (2160p).mp4" type="video/mp4">
     </video> 
     <div class="content-main container">
         <header class="header-page">
+            <div class="menu-and-logo">
             <div><a class="logo" href=""><span class="">M</span><span class="logo--color">I</span></a></div>
-            <nav>
+            
+            <button class="button-menu ">
+                <svg class="menu-icon" width="40" Height="25">
+                    <use href='./publish/symbol-defs (1).svg#icon-menu'></use>
+                </svg>
+            </button>
+            </div>
+            <nav> 
                 <ul class="main-nav-list">
                     <li><a href="#">ГОЛОВНА</a></li>
                     <li><a href="#">БІОГРАФІЯ</a></li>
@@ -65,6 +73,7 @@
                     </a>
                 </li>
             </ul>
+       
         </header>
         <section class="video-nav-section">
             <h1 class="video-nav-section__title">Відео</h1>
