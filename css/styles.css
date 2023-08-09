@@ -40,7 +40,8 @@ img {
 /* video and content */
 #bg-video {
     padding: 0;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     position: absolute;
     top: 0;
     left: 0;
