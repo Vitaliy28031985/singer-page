@@ -30,11 +30,29 @@
             <div class="menu-and-logo">
             <div><a class="logo" href=""><span class="">M</span><span class="logo--color">I</span></a></div>
             
-            <button class="button-menu ">
+            <button class="button-menu open" id="open" type="button">
                 <svg class="menu-icon" width="40" Height="25">
                     <use href='./publish/symbol-defs (1).svg#icon-menu'></use>
                 </svg>
             </button>
+            </div>
+            <div class="menu-container" id="menu">
+                <div class="menu-content">
+                    <button class="button-menu close-button-menu" id="close">
+                    <svg class="menu-icon" width="40" Height="25">
+                        <use href='./publish/symbol-defs (1).svg#icon-Vector-x'></use>
+                    </svg>
+                    </button>
+                    <ul class="menu-list">
+                        <li><a href="#">ГОЛОВНА</a></li>
+                        <li><a href="#">БІОГРАФІЯ</a></li>
+                        <li><a href="#">ВІДЕО</a></li>
+                        <li><a href="#">МУЗИКА</a></li>
+                        <li><a href="#">ФОТО</a></li>
+                        <li><a href="#">КОНТАКТИ</a></li>
+                    </ul>
+
+                </div>
             </div>
             <nav> 
                 <ul class="main-nav-list">
@@ -86,5 +104,6 @@
             </div>
         </section>
      </div> 
+     <script src="./js/menu.js"></script>
 </body>
 </html>
