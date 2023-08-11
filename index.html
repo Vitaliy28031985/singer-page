@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video pages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+   </head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="./publish/video (2160p).mp4" type="video/mp4">
+    </video> 
+    <div class="content-main container">
+        <header class="header-page">
+            <div class="menu-and-logo">
+            <div><a class="logo" href=""><span class="">M</span><span class="logo--color">I</span></a></div>
+            
+            <button class="button-menu open" id="open" type="button">
+                <svg class="menu-icon" width="40" Height="25">
+                    <use href='./publish/symbol-defs (1).svg#icon-menu'></use>
+                </svg>
+            </button>
+            </div>
+            <div class="menu-container" id="menu">
+                <div class="menu-content">
+                    <button class="button-menu close-button-menu" id="close">
+                    <svg class="menu-icon" width="40" Height="25">
+                        <use href='./publish/symbol-defs (1).svg#icon-Vector-x'></use>
+                    </svg>
+                    </button>
+                    <ul class="menu-list">
+                        <li><a href="#">ГОЛОВНА</a></li>
+                        <li><a href="#">БІОГРАФІЯ</a></li>
+                        <li><a href="#">ВІДЕО</a></li>
+                        <li><a href="./pages/photo.html">МУЗИКА</a></li>
+                        <li><a href="#">ФОТО</a></li>
+                        <li><a href="#">КОНТАКТИ</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <nav> 
+                <ul class="main-nav-list">
+                    <li><a href="#">ГОЛОВНА</a></li>
+                    <li><a href="#">БІОГРАФІЯ</a></li>
+                    <li><a href="#">ВІДЕО</a></li>
+                    <li><a href="#">МУЗИКА</a></li>
+                    <li><a href="./pages/photo.html">ФОТО</a></li>
+                    <li><a href="#">КОНТАКТИ</a></li>
+                </ul>
+            </nav>
+            <ul class="social social--footer">
+                <li class="social__itam social__itam--footer">
+                    <a class="social__link social__link--footer"
+                        href="https://www.instagram.com/i.michael.singer/?fbclid=IwAR2-rxvvpcN7pD4nX5shv9g3GnrmENIdQPqNttorhSrTVsgr8c-ekAo1-x4"
+                        target="_blank">
+                        <svg class="social__icon">
+                            <use href='./publish/symbol-defs (1).svg#icon-instagram'></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__itam social__itam--footer">
+                    <a class="social__link social__link--footer"
+                        href="https://www.facebook.com/profile.php?id=100013255813809&sk=about_overview" target="_blank">
+                        <svg class="social__icon">
+                            <use href='./publish/symbol-defs (1).svg#icon-facebook2'></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__itam social__itam--footer">
+                    <a class="social__link social__link--footer" href="https://www.youtube.com/channel/UCKESk3h9XAk3HZzUUAMa7rA"
+                        target="_blank">
+                        <svg class="social__icon">
+                            <use href='./publish/symbol-defs (1).svg#icon-youtube'></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+       
+        </header>
+        <section class="video-nav-section">
+            <h1 class="video-nav-section__title">Відео</h1>
+            <p class="video-nav-section__text">Тут представлені як професійні відеороботи, так і любительські відеозаписи. Приємного перегляду!</p>
+            <div class="video-nav-section__list">
+                <a class="video-nav-section__list__item" href="#">КЛІПИ</a>
+                <a class="video-nav-section__list__item" href="#">КОНЦЕРТИ</a>
+                <a class="video-nav-section__list__item" href="#">СЛУЖІННЯ</a>
+                <a class="video-nav-section__list__item" href="#">ІНТЕРВ'Ю</a>
+            </div>
+        </section>
+     </div> 
+     <script src="./js/menu.js"></script>
+</body>
+</html>
