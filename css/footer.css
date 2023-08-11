@@ -1,0 +1,91 @@
+.footer {
+    background-color: #111;
+    text-align: center;
+}
+
+.footer__body {
+   align-items: center;
+    padding: 20px 30px;
+}
+
+ @media screen and (min-width: 768px) {
+     .footer__body {
+        display: flex;
+        gap: 90px;
+        justify-content: center;
+     }
+ }
+/* .footer__info {
+    
+} */
+ @media screen and (min-width: 768px) {
+     .footer__info {
+        max-width: 45%;
+     }
+ }
+
+.logo__footer {
+    font-family: 'Ms Madi';
+    font-size: 60px;
+    color: blanchedalmond;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.logo__footer--color {
+    color: #757575fa;
+    font-family: 'Ms Madi';
+}
+
+
+.footer__info h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+.footer__info p {
+font-size: 12px;
+font-weight: 400;
+line-height: 1.8;
+margin-bottom: 30px;
+margin-top: 50px;
+}
+
+
+.link-menu {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-size: 40px;
+    text-align: center;
+    top: -50px;
+}
+
+ @media screen and (min-width: 768px) {
+     .link-menu {
+        top: 0;
+     }
+ }
+
+
+.link-menu:hover {
+    color: bisque;
+}
+.footer-developer-info {
+    margin-top: 60px;
+    position: relative;
+}
+.footer-developer-info p {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer__link {
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.footer__link:hover {
+    color: bisque;
+}
