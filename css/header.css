@@ -30,7 +30,10 @@ img {
 }
 
 .header-page {
-
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -69,6 +72,11 @@ img {
     color: #111;
     font-family: 'Ms Madi';
 }
+
+.logo--color_photo--scroll {
+    color: #666;
+}
+
 
 .menu-and-logo {
     display: flex;
@@ -248,7 +256,7 @@ img {
 
 .social__link_photo:hover,
 .social__link_photo:focus {
-    background-color: #111;
+    background-color: #666;
     ;
 }
 
@@ -283,4 +291,9 @@ img {
     100% {
         width: 60%;
     }
+}
+
+.scroll-header {
+    z-index: 999;
+    background-color: rgba(4, 4, 4, 0.8);
 }
