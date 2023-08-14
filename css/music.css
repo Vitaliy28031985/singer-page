@@ -1,0 +1,128 @@
+*:after,
+*:before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url(../publish/music.jpg) center / cover no-repeat fixed;
+    /* background-color: #333; */
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Raleway';
+}
+
+.container {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        ;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+.content {
+    min-height: calc(100vh - 70px);
+}
+
+.fon {
+    height: 150px;
+    background: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url(../publish/music.jpg) center / cover no-repeat fixed;
+}
+
+.player-container {
+    width: 250px;
+    background-color: #fff;
+    color: #111;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .player-container {
+        width: 400px;
+        ;
+    }
+}
+
+.player {
+margin-right: auto;
+margin-left: auto;
+text-align: center;
+}
+.player-title {
+    margin-bottom: 20px;
+}
+
+/* .player-cover {
+    display: flex;
+    justify-content: center;
+} */
+
+.player-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player-song {
+    display: block;
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.player-progress-container {
+padding: 40px;
+/* display: flex; */
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.progress {
+    
+    /* width: 250px; */
+    height: 2px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    background-color: #111;
+}
+
+.progress-time {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.player-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.player-buttons button {
+    border: transparent;
+    background-color: transparent;
+}
+.button-icon {
+width: 30px;
+height: 30px;
+pointer-events: none;
+}

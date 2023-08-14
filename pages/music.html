@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/music.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+<header class="container header-page" id="nav">
+    <div class="menu-and-logo">
+        <div><a class="logo" href=""><span class="">M</span><span class="logo-js logo--color_photo">I</span></a></div>
+
+        <button class="button-menu open" id="open" type="button">
+            <svg class="menu-icon" width="40" Height="25">
+                <use href='../publish/symbol-defs (1).svg#icon-menu'></use>
+            </svg>
+        </button>
+    </div>
+    <div class="menu-container" id="menu">
+        <div class="menu-content">
+            <button class="button-menu close-button-menu" id="close">
+                <svg class="menu-icon" width="40" Height="25">
+                    <use href='../publish/symbol-defs (1).svg#icon-Vector-x'></use>
+                </svg>
+            </button>
+            <ul class="menu-list">
+                <li><a href="../index.html">ГОЛОВНА</a></li>
+                <li><a href="#">БІОГРАФІЯ</a></li>
+                <li><a href="#">ВІДЕО</a></li>
+                <li><a href="./music.html">МУЗИКА</a></li>
+                <li><a href="./photo.html">ФОТО</a></li>
+                <li><a href="#">КОНТАКТИ</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <nav>
+        <ul class="main-nav-list">
+            <li><a href="../index.html">ГОЛОВНА</a></li>
+            <li><a href="#">БІОГРАФІЯ</a></li>
+            <li><a href="#">ВІДЕО</a></li>
+            <li><a href="./music.html">МУЗИКА</a></li>
+            <li><a href="./photo.html">ФОТО</a></li>
+            <li><a href="#">КОНТАКТИ</a></li>
+        </ul>
+    </nav>
+    <ul class="social social--footer">
+        <li class="social__itam social__itam--footer">
+            <a class="social__link_photo social__link--footer"
+                href="https://www.instagram.com/i.michael.singer/?fbclid=IwAR2-rxvvpcN7pD4nX5shv9g3GnrmENIdQPqNttorhSrTVsgr8c-ekAo1-x4"
+                target="_blank">
+                <svg class="social__icon">
+                    <use href='../publish/symbol-defs (1).svg#icon-instagram'></use>
+                </svg>
+            </a>
+        </li>
+        <li class="social__itam social__itam--footer">
+            <a class="social__link_photo social__link--footer"
+                href="https://www.facebook.com/profile.php?id=100013255813809&sk=about_overview" target="_blank">
+                <svg class="social__icon">
+                    <use href='../publish/symbol-defs (1).svg#icon-facebook2'></use>
+                </svg>
+            </a>
+        </li>
+        <li class="social__itam social__itam--footer">
+            <a class="social__link_photo social__link--footer"
+                href="https://www.youtube.com/channel/UCKESk3h9XAk3HZzUUAMa7rA" target="_blank">
+                <svg class="social__icon">
+                    <use href='../publish/symbol-defs (1).svg#icon-youtube'></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</header>
+
+<div class="fon"></div>
+
+<div class="content container">
+    <div class="player-container">
+        <div class="player">
+            <h3 class="player-title">Now Playing</h3>
+            <div class="player-cover">
+                <img class="player-picture" src="../publish/music.jpg" alt="">
+                <p class="player-song"></p>
+                <audio class="play-audio" src=""></audio>
+                <div class="player-progress-container">
+                    <div class="progress"></div><p class="progress-time"></p>
+                </div>
+                <div class="player-buttons">
+                    <button class="prev-button" type="button"><img class="button-icon" src="../publish/prev.png" alt="prev"></button>
+                    <button class="play-button" type="button"><img class="button-icon img-src" src="../publish/play.png" alt=""></button>
+                    <button class="next-button" type="button"><img class="button-icon" src="../publish/next.png" alt="next"></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container  footer__body">
+        <div class="footer__info">
+            <div><a class="logo__footer" href=""><span class="">M</span><span class="logo__footer--color">I</span></a>
+            </div>
+            <h3>МИХАЙЛО ІВАЩЕНКО</h3>
+            <p>
+                Ласкаво просимо на офіційний сайт співака Михайла Іващенка! Мхало Іващенко - артист, співак,
+                автор-виконавець, викладач
+                вокалу, який більше 10 років працює на професійній сцені. На сайті представлено творчість артиста у
+                вигляді пісень,
+                кліпів, відео та інша інформація.
+            </p>
+
+            <p>
+                Кожен з вас може ознайомитися з будь-якою частиною творчого життя артиста.
+            </p>
+        </div>
+        <div class="footer-developer-info">
+            <svg class="menu-icon" width="50" Height="35">
+                <use href='../publish/symbol-defs (1).svg#icon-home'></use>
+            </svg>
+            <p>Сайт створено та підтримується</p>
+            <a class="footer__link" href="https://vitaliy28031985.github.io/Deploy-my-portfolio/"
+                target="_blank">Vitalii Piddubchak</a>
+            <p>Михайло Iващенко &copy;</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/scrollHeader.js"></script>
+<script src="../js/menu.js"></script>
+<script type="module" src="../js/player.js"></script>
+</body>
+</html>
