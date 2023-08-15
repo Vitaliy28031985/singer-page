@@ -30,9 +30,26 @@ const playerEl = document.querySelector('.player'),
     progressTime = document.querySelector(".progress-time"),
     titleEl = document.querySelector(".player-song"),
     coverImg = document.querySelector(".player-picture"),
-    imgSrc = document.querySelector(".img-src");
+    imgSrc = document.querySelector(".img-src"),
+    playerListEl = document.querySelector(".player-list"),
+    playerListItem = document.querySelector(".player-list");
 
 
+
+// add player marking
+
+const treksList = () => {
+   const render = treks
+     .map(
+       ({id, title }) =>
+         `<li  class="player-list-item"><p id=${id}>${title}</p></li>`
+     )
+     .join("");
+   
+   playerListEl.insertAdjacentHTML("afterbegin", render);
+};
+
+treksList();
 
 //helpers function
 
@@ -148,4 +165,28 @@ const nextAuto = () => {
 }
 
 audioEl.addEventListener('ended', nextAuto);
+
+
+// to choose item with list
+
+const chooseItem = (e) => {
+    
+    const currentItem = e.target.id;
+    const chooseTreks = treks.filter(trek => trek.id === currentItem);
+    audioEl.src = chooseTreks[0].url;
+    titleEl.textContent = chooseTreks[0].title;
+    coverImg.src = chooseTreks[0].avatar;
+    progressEl.style.width = `${0}%`;
+    audioEl.play()
+    playBtn.classList.remove("play");
+    imgSrc.src = '../publish/stop.png';
+    
+}
+
+
+playerListItem.addEventListener('click', chooseItem);
+
+
+
+
 
