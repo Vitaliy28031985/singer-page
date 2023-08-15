@@ -1,6 +1,3 @@
-// import { helpers } from './helpers/helpers';
-// import { treks } from "./db";
-// import once from '';
 
 const treks = [
     {
@@ -28,12 +25,28 @@ const playerEl = document.querySelector('.player'),
     playBtn = document.querySelector(".play-button"),
     nextBtn = document.querySelector(".next-button"),
     audioEl = document.querySelector(".play-audio"),
-    progressContainerEl = document.querySelector(".player-progress-container"),
+    progressContainerEl = document.querySelector(".progress-fon"),
     progressEl = document.querySelector(".progress"),
     progressTime = document.querySelector(".progress-time"),
     titleEl = document.querySelector(".player-song"),
     coverImg = document.querySelector(".player-picture"),
     imgSrc = document.querySelector(".img-src");
+
+
+
+//helpers function
+
+function convertSecondsToHoursMinutesSeconds(seconds) {
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const remainingSeconds = seconds % 60;
+
+    return {
+        hours: hours,
+        minutes: minutes,
+        seconds: remainingSeconds
+    };
+}
 
 audioEl.src = treks[0].url;
 titleEl.textContent = treks[0].title;
@@ -99,12 +112,40 @@ prevBtn.addEventListener('click', prev);
 playBtn.addEventListener('click', playSong);
 nextBtn.addEventListener('click', next);
 
+//update progress
+
 const updateProgress = (e) => {
     const { duration, currentTime } = e.srcElement;
     const progressPercent = (currentTime / duration) * 100;
     progressEl.style.width = `${progressPercent}%`;
-    const min = currentTime.toFixed(0) / 60;
-    progressTime.textContent = `${min.toFixed(2)} хв.`;
+    const timeObject = convertSecondsToHoursMinutesSeconds(currentTime.toFixed(0));
+    progressTime.textContent = `${timeObject.minutes} : ${timeObject.seconds} min.`;
 }
 
 audioEl.addEventListener('timeupdate', updateProgress);
+
+
+//set progress
+
+function setProgress (e) {
+    const width = this.clientWidth;
+    const clickX = e.offsetX;
+    const duration = audioEl.duration;
+    audioEl.currentTime = (clickX / width) * duration;
+}
+
+progressContainerEl.addEventListener("click", setProgress);
+
+// next auto
+
+const nextAuto = () => {
+    counterIncrement(treks.length - 1);
+    audioEl.src = treks[count].url;
+    titleEl.textContent = treks[count].title;
+    coverImg.src = treks[count].avatar;
+    progressEl.style.width = `${0}%`;
+    audioEl.play();    
+}
+
+audioEl.addEventListener('ended', nextAuto);
+
