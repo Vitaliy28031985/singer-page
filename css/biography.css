@@ -1,0 +1,159 @@
+*:after,
+*:before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url(../publish/biography.jpg) center / cover no-repeat fixed;
+    /* background-color: #333; */
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Raleway';
+}
+
+.container {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        ;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+.content {
+    min-height: calc(100vh - 70px);
+    
+}
+
+.fon {
+    height: 150px;
+    background: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url(../publish/biography.jpg) center / cover no-repeat fixed;
+}
+
+.video-nav-section__title {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.video-nav-section__title:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 2.5%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: beige;
+    z-index: 222;
+}
+
+.content-container {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+
+@media screen and (min-width: 1200px) {
+    .content-container {
+        display: flex;
+    }
+}
+
+.text-container {
+    padding: 20px;
+    color: #111;
+}
+
+.text-container h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .text-container h2 {
+        font-size: 30px;
+        text-align: start;
+    }
+}
+
+.text-container p {
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .text-container p {
+        font-size: 18px;
+        text-align: start;
+    }
+}
+
+.photo-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.photo-container li {
+margin-right: 10px;
+margin-left: 10px;
+margin-bottom: 20px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .photo-container li {
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .photo-container li {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
+
+.photo-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 150px;
+}
+
+@media screen and (min-width: 768px) {
+    .photo-container img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        height: 300px;
+    }
+}
