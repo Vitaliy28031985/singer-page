@@ -157,9 +157,10 @@ img {
     animation-duration: 500ms;
 }
 
+
 .current-main-nav-list {
-position: relative;
-font-size: 20px;
+    position: relative;
+    font-size: 20px;
 }
 
 .current-main-nav-list::before {
@@ -175,7 +176,6 @@ font-size: 20px;
     animation-name: width;
     animation-duration: 500ms;
 }
-
 
 /* button menu */
 .button-menu {

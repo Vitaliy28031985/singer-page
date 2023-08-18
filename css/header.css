@@ -162,12 +162,18 @@ img {
 
 .menu-container {
     position: absolute;
-    top: 0;
+    top: 40px;
     left: 0;
     min-width: 100%;
     min-height: 100%;
     background-color: rgba(0, 0, 0, 0.966);
-    z-index: 444;
+    z-index: 1000000;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-container {
+        top: 12px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -225,6 +231,8 @@ img {
     margin-top: 16px;
 
 }
+
+
 
 .social--footer {
     margin-top: 0px;
