@@ -47,6 +47,7 @@ body {
     background: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url(../publish/microphone.jpg) center / cover no-repeat fixed;
 }
 
+
 .title-wrapper {
         position: relative;
         /* padding: 20px;
@@ -59,7 +60,7 @@ body {
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c74c4c4c', endColorstr='#c7131313', GradientType=0);
         /* IE6-9 */  
-        z-index: 0;  
+          
 }
 
 .title-container {
@@ -106,7 +107,8 @@ body {
 }
 
 
-.title-text p {
+.text-main {
+    margin-bottom: 10px;
     font-size: 30px;
 }
 
