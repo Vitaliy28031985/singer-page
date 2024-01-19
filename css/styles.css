@@ -22,6 +22,7 @@ body {
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    /* box-sizing: border-box; */
 }
 
 @media screen and (min-width: 768px) {
@@ -50,6 +51,8 @@ body {
 
 .title-wrapper {
         position: relative;
+        /* display: flex;
+        box-sizing: border-box; */
         /* padding: 20px;
  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,2c2c2c+37,111111+60,2b2b2b+76,1c1c1c+91,131313+100&0.78+14,0.78+81 */
         background: -moz-linear-gradient(top, rgba(76, 76, 76, 0.78) 0%, rgba(89, 89, 89, 0.78) 12%, rgba(91, 91, 91, 0.78) 14%, rgba(102, 102, 102, 0.78) 25%, rgba(44, 44, 44, 0.78) 37%, rgba(17, 17, 17, 0.78) 60%, rgba(43, 43, 43, 0.78) 76%, rgba(38, 38, 38, 0.78) 81%, rgba(28, 28, 28, 0.78) 91%, rgba(19, 19, 19, 0.78) 100%);
@@ -119,22 +122,32 @@ opacity: 0.75;
 
 .title-img {
     display: none;
-    position: absolute;
     bottom: 0;
     right: 10%;
 }
 
+
 @media screen and (min-width: 768px) {
-    .title-img {
+    .title-img  {
         display: block;
+        position: absolute;
         width: 200px;
         height: 400px;
+        left: 420px;
+        bottom: 10px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .title-img {
-        width: 300px;
+        width: 400px;
+        height: 600px;
+        bottom: -100px;
+        left: 800px;
+    }
+    .title-img img {
+        width: 700px;
         height: 500px;
     }
+    
 }
