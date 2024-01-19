@@ -68,7 +68,7 @@ body {
 
 .title-container {
     display: flex;
-    justify-content: center; 
+    box-sizing: border-box;
     align-items: center; 
 }
 
@@ -83,12 +83,19 @@ body {
         margin-top: 100px;
         padding-right: 150px;
     }
+    .title-container {
+        width: 400px;
+        margin-left: 350px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .title-text {
         margin-top: 250px;
         padding-right: 250px;
+    }
+    .title-container {
+        margin-left: 500px;
     }
 }
 
@@ -131,23 +138,20 @@ opacity: 0.75;
     .title-img  {
         display: block;
         position: absolute;
-        width: 200px;
+        width: 500px;
         height: 400px;
-        left: 420px;
-        bottom: 10px;
+        left: 0;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .title-img {
-        width: 400px;
+        width: 800px;
         height: 600px;
-        bottom: -100px;
-        left: 800px;
+        left: 0;
+        /* bottom: -100px;
+        left: 800px; */
     }
-    .title-img img {
-        width: 700px;
-        height: 500px;
-    }
+   
     
 }
