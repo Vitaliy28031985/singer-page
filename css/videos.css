@@ -406,7 +406,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 1300px) and (max-width: 1500px) {
   .scroll-header {
     min-width: 1500px;
   }
