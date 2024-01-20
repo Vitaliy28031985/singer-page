@@ -1,157 +1,180 @@
 *:after,
 *:before {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
-    background: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url(../publish/microphone.jpg) center / cover no-repeat fixed;
-    /* background-color: #333; */
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Raleway';
+  height: 100%;
+  background: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+    url(../publish/microphone.jpg) center / cover no-repeat fixed;
+  /* background-color: #333; */
+  color: #fff;
+  font-size: 20px;
+  font-family: "Raleway";
 }
 
 .container {
-    width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    /* box-sizing: border-box; */
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* box-sizing: border-box; */
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-        ;
-    }
+  .container {
+    width: 768px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    }
+  .container {
+    width: 1200px;
+  }
 }
 
 .content {
-    min-height: calc(100vh - 70px);
-
+  min-height: calc(100vh - 70px);
 }
 
 .fon {
-    height: 150px;
-    background: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url(../publish/microphone.jpg) center / cover no-repeat fixed;
+  height: 150px;
+  background: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)),
+    url(../publish/microphone.jpg) center / cover no-repeat fixed;
 }
 
-
-.title-wrapper {
-        position: relative;
-        /* display: flex;
+/* .title-wrapper { */
+/* position: relative; */
+/* display: flex;
         box-sizing: border-box; */
-        /* padding: 20px;
+/* padding: 20px;
  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,2c2c2c+37,111111+60,2b2b2b+76,1c1c1c+91,131313+100&0.78+14,0.78+81 */
-        background: -moz-linear-gradient(top, rgba(76, 76, 76, 0.78) 0%, rgba(89, 89, 89, 0.78) 12%, rgba(91, 91, 91, 0.78) 14%, rgba(102, 102, 102, 0.78) 25%, rgba(44, 44, 44, 0.78) 37%, rgba(17, 17, 17, 0.78) 60%, rgba(43, 43, 43, 0.78) 76%, rgba(38, 38, 38, 0.78) 81%, rgba(28, 28, 28, 0.78) 91%, rgba(19, 19, 19, 0.78) 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(76, 76, 76, 0.78) 0%, rgba(89, 89, 89, 0.78) 12%, rgba(91, 91, 91, 0.78) 14%, rgba(102, 102, 102, 0.78) 25%, rgba(44, 44, 44, 0.78) 37%, rgba(17, 17, 17, 0.78) 60%, rgba(43, 43, 43, 0.78) 76%, rgba(38, 38, 38, 0.78) 81%, rgba(28, 28, 28, 0.78) 91%, rgba(19, 19, 19, 0.78) 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(76, 76, 76, 0.78) 0%, rgba(89, 89, 89, 0.78) 12%, rgba(91, 91, 91, 0.78) 14%, rgba(102, 102, 102, 0.78) 25%, rgba(44, 44, 44, 0.78) 37%, rgba(17, 17, 17, 0.78) 60%, rgba(43, 43, 43, 0.78) 76%, rgba(38, 38, 38, 0.78) 81%, rgba(28, 28, 28, 0.78) 91%, rgba(19, 19, 19, 0.78) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c74c4c4c', endColorstr='#c7131313', GradientType=0);
-        /* IE6-9 */  
-          
-}
+/* background: -moz-linear-gradient(top, rgba(76, 76, 76, 0.78) 0%, rgba(89, 89, 89, 0.78) 12%, rgba(91, 91, 91, 0.78) 14%, rgba(102, 102, 102, 0.78) 25%, rgba(44, 44, 44, 0.78) 37%, rgba(17, 17, 17, 0.78) 60%, rgba(43, 43, 43, 0.78) 76%, rgba(38, 38, 38, 0.78) 81%, rgba(28, 28, 28, 0.78) 91%, rgba(19, 19, 19, 0.78) 100%); */
+/* FF3.6-15 */
+/* background: -webkit-linear-gradient(top, rgba(76, 76, 76, 0.78) 0%, rgba(89, 89, 89, 0.78) 12%, rgba(91, 91, 91, 0.78) 14%, rgba(102, 102, 102, 0.78) 25%, rgba(44, 44, 44, 0.78) 37%, rgba(17, 17, 17, 0.78) 60%, rgba(43, 43, 43, 0.78) 76%, rgba(38, 38, 38, 0.78) 81%, rgba(28, 28, 28, 0.78) 91%, rgba(19, 19, 19, 0.78) 100%); */
+/* Chrome10-25,Safari5.1-6 */
+/* background: linear-gradient(to bottom, rgba(76, 76, 76, 0.78) 0%, rgba(89, 89, 89, 0.78) 12%, rgba(91, 91, 91, 0.78) 14%, rgba(102, 102, 102, 0.78) 25%, rgba(44, 44, 44, 0.78) 37%, rgba(17, 17, 17, 0.78) 60%, rgba(43, 43, 43, 0.78) 76%, rgba(38, 38, 38, 0.78) 81%, rgba(28, 28, 28, 0.78) 91%, rgba(19, 19, 19, 0.78) 100%); */
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c74c4c4c', endColorstr='#c7131313', GradientType=0); */
+/* IE6-9 */
+/* } */
 
-.title-container {
-    display: flex;
-    box-sizing: border-box;
-    align-items: center; 
-}
+/* .title-container {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+} */
 
-.title-text {
-    margin-top: 100px;
-    text-align: center;
-    padding-bottom: 40px;
+/* .title-text {
+  margin-top: 100px;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
-    .title-text {
-        margin-top: 100px;
-        padding-right: 150px;
-    }
-    .title-container {
-        width: 400px;
-        margin-left: 350px;
-    }
+  .title-text {
+    margin-top: 100px;
+    padding-right: 150px;
+  }
+  .title-container {
+    width: 400px;
+    margin-left: 350px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .title-text {
-        margin-top: 250px;
-        padding-right: 250px;
-    }
-    .title-container {
-        margin-left: 500px;
-    }
+  .title-text {
+    margin-top: 250px;
+    padding-right: 250px;
+  }
+  .title-container {
+    margin-left: 500px;
+  }
 }
 
 .title-text h1 {
-    margin-bottom: 20px;
-    font-size: 40px;
-
+  margin-bottom: 20px;
+  font-size: 40px;
 }
 
 @media screen and (min-width: 768px) {
-    .title-text h1 {
-        font-size: 30px;
-    }
+  .title-text h1 {
+    font-size: 30px;
+  }
 }
 
-
 @media screen and (min-width: 1200px) {
-    .title-text h1 {
-        font-size: 60px;
-    }
+  .title-text h1 {
+    font-size: 60px;
+  }
 }
 
 .title-text a:hover {
-opacity: 0.75;
+  opacity: 0.75;
 }
 
 .text-main {
-    margin-bottom: 10px;
-    font-size: 30px;
+  margin-bottom: 10px;
+  font-size: 30px;
 }
 
 .title-img {
-    display: none;
-    bottom: 0;
-    right: 10%;
+  display: none;
+  bottom: 0;
+  right: 10%;
 }
-
 
 @media screen and (min-width: 768px) {
-    .title-img  {
-        display: block;
-        position: absolute;
-        width: 500px;
-        height: 400px;
-        left: 0;
-    }
-}
+  .title-img {
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    left: 0;
+  }
+} */
+
+/* @media screen and (min-width: 1200px) { */
+/* .title-img {
+    width: 800px;
+    height: 600px;
+    left: 0; */
+/* bottom: -100px;
+        left: 800px; */
+/* }
+} */
 
 @media screen and (min-width: 1200px) {
-    .title-img {
-        width: 800px;
-        height: 600px;
-        left: 0;
-        /* bottom: -100px;
-        left: 800px; */
-    }
-   
-    
+  .title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+  .title-img {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+  .title-img {
+    width: 600px;
+  }
 }
